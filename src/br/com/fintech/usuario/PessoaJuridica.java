@@ -1,16 +1,17 @@
 package br.com.fintech.usuario;
 /**
  * Subclasse PessoaJuridica filha da Superclasse Pessoa
- * @author Rafael Feitosa
- * @version 1.0
+ * @author Rafael Feitosa, Adriano Ferreira, João Mota, Beatriz de Menezes, Lucas Pessanha
+ * @version 1.1
  * @see Pessoa
  */
 public class PessoaJuridica extends Pessoa {
 
     private String cnpj;
 
-    public PessoaJuridica(int codPessoa, String nome, String endereco, String fone, char status) {
-        super(codPessoa, nome, endereco, fone, status);
+    public PessoaJuridica(int codPessoa, String nome, String endereco, String fone, String cnpj) {
+        super(codPessoa, nome, endereco, fone);
+        this.cnpj = cnpj;
     }
     /**
      * @return Cnpj registrado
@@ -38,7 +39,7 @@ public class PessoaJuridica extends Pessoa {
     @Override
     public String visualizarCadastro() {
         return "Pessoa Juridica" + super.getNome() + "-CNPJ" + this.getCnpj() + "Endereço" + super.getEndereco()
-                + "Telefone" + super.getFone() + "Status" + super.getStatus();
+                + "Telefone" + super.getFone();
     }
 
 

@@ -1,16 +1,17 @@
 package br.com.fintech.usuario;
 /**
  * Subclasse PessoaFisica filha da Superclasse Pessoa
- * @author Rafael Feitosa
- * @version 1.0
+ * @author Rafael Feitosa, Adriano Ferreira, João Mota, Beatriz de Menezes, Lucas Pessanha
+ * @version 1.1
  * @see Pessoa
  */
 public class PessoaFisica extends Pessoa {
 
     private String cpf;
 
-    public PessoaFisica(int codPessoa, String nome, String endereco, String fone, char status) {
-        super(codPessoa, nome, endereco, fone, status);
+    public PessoaFisica(int codPessoa, String nome, String endereco, String fone, String cpf) {
+        super(codPessoa, nome, endereco, fone);
+        this.cpf = cpf;
     }
 
     /**
@@ -40,8 +41,8 @@ public class PessoaFisica extends Pessoa {
      */
     @Override
     public String visualizarCadastro() {
-        return "Pessoa Física" + super.getNome() + " -CPF" + this.getCpf() + "Endereço" + super.getEndereco()
-                + "Telefone" + super.getFone() + "Status" + super.getStatus();
+        return "Pessoa Física n/" + super.getNome() + " -CPF" + this.getCpf() + "Endereço" + super.getEndereco()
+                + "Telefone" + super.getFone();
     }
 
 }

@@ -1,26 +1,24 @@
 package br.com.fintech.usuario;
 /**
  * Classe que abstrai uma Pessoa
- * @author Rafael Feitosa
- * @version 1.0
+ * @author Rafael Feitosa, Adriano Ferreira, João Mota, Beatriz de Menezes, Lucas Pessanha
+ * @version 1.1
  */
 public abstract class Pessoa {
     private int codPessoa;
     private String nome;
     private String endereco;
     private String fone;
-    private char status;
 
     public Pessoa(){
 
     }
 
-    public Pessoa(int codPessoa, String nome, String endereco, String fone, char status) {
+    public Pessoa(int codPessoa, String nome, String endereco, String fone) {
         this.codPessoa = codPessoa;
         this.nome = nome;
         this.endereco = endereco;
         this.fone = fone;
-        this.status = status;
     }
 
     public int getCodPessoa() {
@@ -78,25 +76,6 @@ public abstract class Pessoa {
         this.fone = fone;
     }
 
-    /**
-     *
-     * @return status
-     * @see inativarUsuario
-     * @see ativarUsuario
-     */
-    public char getStatus() {
-        return status;
-    }
-
-    /**
-     * Altera o valor de status
-     * @param status
-     * @see inativarUsuario
-     * @see ativarUsuario
-     */
-    public void setStatus(char status) {
-        this.status = status;
-    }
 
     /**
      * Metodo abstrato para retornar um valor ao registrar o usuário
@@ -107,21 +86,6 @@ public abstract class Pessoa {
      * Metodo abstrato para visualizar cadastro do usuário
      */
     public abstract String visualizarCadastro();
-
-    /**
-     * Altera o valor do usuário para 'A' que representa 'Ativo'
-     */
-    public void ativarUsuario(){
-        this.status = 'A';
-    }
-
-    /**
-     * Altera o valor de status para 'I' que representa 'Inativo'
-     */
-    public void inativarUsuario(){
-        this.status = 'I';
-    }
-
 
 }
 

@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 /**
  * Classe que abstrai uma Conta Bancária
- * @author Rafael Feitosa
- * @version 1.0
+ * @author Rafael Feitosa, Adriano Ferreira, João Mota, Beatriz de Menezes, Lucas Pessanha
+ * @version 1.1
  */
 public class Conta implements Serializable {
     private Integer agencia;
@@ -35,6 +35,17 @@ public class Conta implements Serializable {
      */
     public void setAgencia(Integer agencia) {
         this.agencia = agencia;
+    }
+    /**
+     * Verifica o saldo da conta
+     * @return Saldo da conta
+     */
+    public Double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(Double saldo) {
+        this.saldo = saldo;
     }
 
     /**
@@ -68,12 +79,7 @@ public class Conta implements Serializable {
     public void retirar(Double valor) {
         this.saldo -= valor;
     }
-
-    /**
-     * Verifica o saldo da conta
-     * @return Saldo da conta
-     */
-    public double getSaldo() {
-        return this.saldo;
+    public Double verificarSaldo(){
+        return saldo;
     }
 }
