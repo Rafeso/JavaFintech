@@ -41,8 +41,8 @@ public class PessoaFisica extends Pessoa {
      */
     @Override
     public String visualizarCadastro() {
-        return "Pessoa Física n/" + super.getNome() + " -CPF" + this.getCpf() + "Endereço" + super.getEndereco()
-                + "Telefone" + super.getFone();
+        return "\nPessoa Física: " + super.getNome() + "\nCPF: " + this.getCpf() + "\nEndereço: " + super.getEndereco()
+                + "\nTelefone: " + super.getFone();
     }
 
 }

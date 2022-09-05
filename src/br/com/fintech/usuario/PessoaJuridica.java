@@ -38,8 +38,8 @@ public class PessoaJuridica extends Pessoa {
      */
     @Override
     public String visualizarCadastro() {
-        return "Pessoa Juridica" + super.getNome() + "-CNPJ" + this.getCnpj() + "Endereço" + super.getEndereco()
-                + "Telefone" + super.getFone();
+        return "Pessoa Juridica: " + super.getNome() + " \nCNPJ: " + this.getCnpj() + "\nEndereço: " + super.getEndereco()
+                + "\nTelefone: " + super.getFone();
     }
 
 
