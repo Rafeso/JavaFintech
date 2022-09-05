@@ -2,7 +2,7 @@ package br.com.fintech.usuario;
 /**
  * Classe que abstrai uma Pessoa
  * @author Rafael Feitosa, Adriano Ferreira, João Mota, Beatriz de Menezes, Lucas Pessanha
- * @version 1.1
+ * @version 1.2
  */
 public abstract class Pessoa {
     private int codPessoa;

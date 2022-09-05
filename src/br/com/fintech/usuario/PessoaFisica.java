@@ -2,7 +2,7 @@ package br.com.fintech.usuario;
 /**
  * Subclasse PessoaFisica filha da Superclasse Pessoa
  * @author Rafael Feitosa, Adriano Ferreira, João Mota, Beatriz de Menezes, Lucas Pessanha
- * @version 1.1
+ * @version 1.2
  * @see Pessoa
  */
 public class PessoaFisica extends Pessoa {
