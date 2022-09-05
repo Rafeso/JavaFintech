@@ -8,7 +8,7 @@ import java.io.Serializable;
  * Classe que abstrai um planejamento;
  *
  * @author , Adriano Ferreira, Beatriz de Menezes, João Mota, Lucas Pessanha, Rafael Feitosa
- * @version 1.0
+ * @version 1.1
  */
 public class Planejamento implements Serializable {
 
